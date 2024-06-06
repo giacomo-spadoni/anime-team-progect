@@ -55,7 +55,7 @@ export default {
     </div>
   </div>
   <div class="post-list">
-    <div class="col-7 relative">
+    <div class="col_7 relative">
       <div class="main-card">
         <img :src="getImage(shuffledPosts[0].img)" alt="" />
         <div class="info">
@@ -76,7 +76,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="col-5">
+    <div class="col_5">
       <ListCard class="side-card relative" :post="shuffledPosts[1]" />
       <hr />
       <ListCard class="side-card relative" :post="shuffledPosts[2]" />
@@ -106,11 +106,11 @@ export default {
   position: relative;
 }
 
-.col-7 {
+.col_7 {
   width: calc(100% / 12 * 7);
 }
 
-.col-5 {
+.col_5 {
   width: calc(100% / 12 * 5);
 }
 

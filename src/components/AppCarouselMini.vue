@@ -172,12 +172,12 @@ export default {
 }
 
 .animation-right {
-  transform: translateX(-27vw);
+  transform: translateX(-24vw);
   transition: 1s;
 }
 
 .animation-left {
-  transform: translateX(27vw);
+  transform: translateX(24vw);
   transition: 1s;
 }
 
@@ -228,7 +228,7 @@ i {
 }
 
 img {
-  width: 26vw;
+  width: 23vw;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   /* object-position: center; */
