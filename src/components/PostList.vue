@@ -60,7 +60,7 @@ export default {
         <img :src="getImage(shuffledPosts[0].img)" alt="" />
         <div class="info">
           <div class="card-header">
-            <div class="badge">
+            <div class="badge-nobootstrap">
               {{ shuffledPosts[0].badge[0] }}
             </div>
           </div>
@@ -126,7 +126,7 @@ export default {
   justify-content: space-between;
 }
 
-.badge {
+.badge-nobootstrap {
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -135,7 +135,7 @@ export default {
   font-weight: 500;
 }
 
-.badge:hover {
+.badge-nobootstrap:hover {
   color: #bf1d2e;
 }
 

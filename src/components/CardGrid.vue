@@ -20,20 +20,20 @@ export default {
 </script>
 <template>
   <div class="flex-container">
-    <div class="col-3">
-      <div class="box side">
+    <div class="col_3">
+      <div class="box">
         <Card :post="store.posts.fashion" />
       </div>
-      <div class="box side">
+      <div class="box">
         <Card :post="store.posts.travel" />
       </div>
     </div>
-    <div class="col-6">
+    <div class="col_6">
       <div class="box">
         <Card :post="store.posts.trip" />
       </div>
     </div>
-    <div class="col-3">
+    <div class="col_3">
       <div class="box">
         <Card :post="store.posts.music" />
       </div>
@@ -44,11 +44,11 @@ export default {
   </div>
 </template>
 <style scoped>
-.col-6 {
+.col_6 {
   width: calc(100% / 12 * 6);
 }
 
-.col-3 {
+.col_3 {
   width: calc(100% / 12 * 3);
   display: flex;
   flex-direction: column;

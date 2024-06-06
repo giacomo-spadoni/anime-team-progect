@@ -94,9 +94,83 @@ let store = reactive({
     errorImg: '404.webp',
   },
   // ---------------> sezione dedicata ad header e footer di Francesco <--------------
+  navLinks: [
+    { href: '#', icon: 'fas fa-home', text: 'HOME', active: true },
+    { href: '#', icon: 'fas fa-user', text: 'ABOUT US', active: false },
+  ],
+  dropdowns: [
+    {
+      text: 'LIFESTYLE',
+      icon: 'fa-solid fa-suitcase',
+    },
+    {
+      text: 'STORIES',
+      icon: 'fa-solid fa-book-open-reader',
+    },
+    {
+      text: 'PAGES',
+      icon: 'fa-solid fa-book',
+      items: [
+        { href: '#', icon: 'fas fa-search', text: 'SEARCH RESULTS' },
+        {
+          href: '#',
+          icon: 'fa-solid fa-box-archive',
+          text: 'CATEGORY ARCHIVE',
+        },
+        { href: '#', icon: 'fas fa-user', text: 'AUTHOR ARCHIVE' },
+        { href: '#', icon: 'fa-solid fa-calendar-days', text: 'DATE ARCHIVE' },
+        { href: '#', icon: 'fa-solid fa-bug', text: 'ERROR 404' },
+      ],
+    },
+  ],
+  bottomLinks: [
+    { href: '#', icon: 'fa-solid fa-envelope', text: 'CONTACT US' },
+  ],
+
   header: {
-    // da riempire all'occorrenza
+    rice: {
+      title: 'Hygenic Recipe To Prepare Rice',
+      time: '05:35',
+      img: 'food-3-150x150.webp',
+    },
+    meal: {
+      title: 'The Best Time To Have A Meal',
+      time: '05:32',
+      img: 'food-2.webp',
+    },
+    healthy: {
+      title: 'The Best Healty Foods',
+      time: '05:37',
+      img: 'food-150x150.webp',
+    },
+    winter: {
+      title: 'The Best Winter Outfits',
+      time: '05:29',
+      img: 'winter-150x150.webp',
+    },
   },
+  footerData: [
+    {
+      title: 'GET STARTED',
+      links: ['Resources', 'Tutorials', 'Examples', 'Docs'],
+    },
+    {
+      title: 'ABOUT',
+      links: ['Stories', 'Community', 'Blog', 'Brand Assets'],
+    },
+    {
+      title: 'FEATURES',
+      links: ['Overview', 'Design', 'Code', 'Collaborate'],
+    },
+    {
+      title: 'QUICK LINKS',
+      links: ['Stories', 'Community', 'Blog', 'Brand Assets'],
+    },
+    {
+      title: 'SUBSCRIBE TO NEWSLETTER',
+      links: [],
+    },
+  ],
   // ---------------> sezione dedicata ai caroselli di Arnaldo <--------------
   carousel: {
     // da riempire all'occorrenza
@@ -150,9 +224,50 @@ let store = reactive({
     ],
   },
   // ---------------> sezione dedicata ai video trailer di Samian <--------------
-  trailers: {
-    // da riempire all'occorrenza
-  },
+  trailers: [
+    {
+      id: 1,
+      title: 'Eternal Cultivation Anime',
+      embedUrl: 'https://www.youtube.com/embed/9rYkZlt2hHE',
+      videoId: '9rYkZlt2hHE',
+    },
+    {
+      id: 2,
+      title: "Sun's Out, Guns Out",
+      embedUrl: 'https://www.youtube.com/embed/zlwQERpksnw',
+      videoId: 'zlwQERpksnw',
+    },
+    {
+      id: 3,
+      title: 'Top 10 Vinland Saga Moments',
+      embedUrl: 'https://www.youtube.com/embed/itQnUDMMhaU',
+      videoId: 'itQnUDMMhaU',
+    },
+    {
+      id: 4,
+      title: 'Everytime Sukuna Appears',
+      embedUrl: 'https://www.youtube.com/embed/IrU2dklT11s',
+      videoId: 'IrU2dklT11s',
+    },
+    {
+      id: 5,
+      title: 'Wizard King (Julius) vs Licht (Patri) Full Fight',
+      embedUrl: 'https://www.youtube.com/embed/H5qupR6YQpQ',
+      videoId: 'H5qupR6YQpQ',
+    },
+    {
+      id: 6,
+      title: 'Vinland Saga | SHATTERED',
+      embedUrl: 'https://www.youtube.com/embed/ICt1jYfucec',
+      videoId: 'ICt1jYfucec',
+    },
+    {
+      id: 7,
+      title: 'Konan Arranges',
+      embedUrl: 'https://www.youtube.com/embed/CkC5CtabT1Y',
+      videoId: 'CkC5CtabT1Y',
+    },
+  ],
 });
 
 export default store;

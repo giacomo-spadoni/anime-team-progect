@@ -20,14 +20,14 @@ export default {
 };
 </script>
 <template>
-  <section class="container">
+  <section class="container-nobootstrap">
     <CardGrid />
     <PostList />
   </section>
   <MainBanner />
 </template>
 <style scoped>
-.container {
+.container-nobootstrap {
   width: 1400px;
   margin: 0 auto;
 }

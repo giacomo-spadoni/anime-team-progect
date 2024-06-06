@@ -16,11 +16,13 @@ export default {
 };
 </script>
 <template>
-  <div class="card">
+  <div class="card-nobootstrap">
     <img :src="getImage(post.img)" alt="" />
     <div class="info">
       <div class="card-header">
-        <div v-for="(badge, i) in post.badge" class="badge">{{ badge }}</div>
+        <div v-for="(badge, i) in post.badge" class="badge-nobootstrap">
+          {{ badge }}
+        </div>
       </div>
       <div class="card-footer">
         <div>
@@ -35,7 +37,7 @@ export default {
   </div>
 </template>
 <style scoped>
-.card {
+.card-nobootstrap {
   position: relative;
   width: 100%;
   height: 100%;
@@ -59,7 +61,7 @@ export default {
   gap: 15px;
 }
 
-.badge {
+.badge-nobootstrap {
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -67,7 +69,7 @@ export default {
   cursor: pointer;
 }
 
-.badge:hover {
+.badge-nobootstrap:hover {
   color: #bf1d2e;
 }
 
@@ -84,7 +86,7 @@ img {
   filter: brightness(50%);
 }
 
-.card:hover img {
+.card-nobootstrap:hover img {
   filter: contrast(60%) brightness(70%);
 }
 

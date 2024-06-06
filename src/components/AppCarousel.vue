@@ -56,7 +56,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container">
+  <div class="container-nobootstrap">
     <div class="slider">
       <div
         v-for="post in viewed"
@@ -70,7 +70,9 @@ export default {
         <div class="title">{{ post.title }}</div>
         <div class="date">{{ post.date }}</div>
         <div class="badge-container">
-          <div v-for="(badge, i) in post.badge" class="badge">{{ badge }}</div>
+          <div v-for="(badge, i) in post.badge" class="badge-nobootstrap">
+            {{ badge }}
+          </div>
         </div>
       </div>
     </div>
@@ -95,7 +97,7 @@ export default {
   </div>
 </template>
 <style scoped>
-.container {
+.container-nobootstrap {
   background-color: #f3f3f3;
   padding: 3rem 0;
   position: relative;
@@ -150,7 +152,7 @@ export default {
   top: 5%;
 }
 
-.badge {
+.badge-nobootstrap {
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -160,7 +162,7 @@ export default {
 }
 .title:hover,
 .date:hover,
-.badge:hover {
+.badge-nobootstrap:hover {
   color: #bf1d2e;
   cursor: pointer;
 }

@@ -56,7 +56,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container">
+  <div class="container-nobootstrap">
     <div class="title-container">
       <div class="title">FEATURED POSTS</div>
       <div :class="{ indice: falseButton }" class="btn-slider">
@@ -81,7 +81,9 @@ export default {
         <div class="title-card">{{ post.title }}</div>
         <div class="date">{{ post.date }}</div>
         <div class="badge-container">
-          <div v-for="(badge, i) in post.badge" class="badge">{{ badge }}</div>
+          <div v-for="(badge, i) in post.badge" class="badge-nobootstrap">
+            {{ badge }}
+          </div>
         </div>
         <div class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -95,7 +97,7 @@ export default {
   </div>
 </template>
 <style scoped>
-.container {
+.container-nobootstrap {
   background-color: #ffffff;
   padding: 3rem 0;
   position: relative;
@@ -152,7 +154,7 @@ export default {
   top: 5%;
 }
 
-.badge {
+.badge-nobootstrap {
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -162,7 +164,7 @@ export default {
 }
 .title-card:hover,
 .date:hover,
-.badge:hover {
+.badge-nobootstrap:hover {
   color: #bf1d2e;
   cursor: pointer;
 }

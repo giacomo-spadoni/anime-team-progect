@@ -13,7 +13,7 @@ export default {
   <div class="container-flex">
     <img :src="getImage(post.img)" alt="" />
     <div class="info-side">
-      <div class="badge">
+      <div class="badge-nobootstrap">
         {{ post.badge[0] }}
       </div>
     </div>
@@ -43,7 +43,7 @@ export default {
   left: 5%;
 }
 
-.badge {
+.badge-nobootstrap {
   background-color: white;
   color: black;
   border-radius: 5px;
@@ -52,12 +52,13 @@ export default {
   font-weight: 500;
 }
 
-.badge:hover {
+.badge-nobootstrap:hover {
   color: #bf1d2e;
 }
 
 .title-side:hover {
   color: #bf1d2e;
+  cursor: pointer;
 }
 
 img {
